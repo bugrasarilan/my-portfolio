@@ -18,7 +18,7 @@ function Home() {
 
 
     <div className='absolute left-10 bottom-10 flex gap-5  '> 
-    <a href='https://www.linkedin.com/in/nurtekin-bu%C4%9Fra-sar%C4%B1lan-390343183/' target='_blank'> <BsLinkedin/></a>
+    <a href='https://www.linkedin.com/in/bu%C4%9Fra-sar%C4%B1lan-390343183/' target='_blank'> <BsLinkedin/></a>
         <a href='https://github.com/bugrasarilan' target='_blank'><BsGithub/> </a>
         <a href='https://www.instagram.com/bugrasarlan/'target="_blank"><BsInstagram/> </a>
         <Nav/>
