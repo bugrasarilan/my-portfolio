@@ -3,7 +3,7 @@ import Skills from './Skills'
 
 function About() {
   return (
-    <div className='h-2/3 max-sm:h-screen  bg-gradient-to-r from-blue-500 via-blue-700 to-cyan-700' id='About'>
+    <div className='h-2/3 max-sm:h-screen  bg-gradient-to-t via-blue-400  from-blue-500' id='About'>
         <Skills/>
     </div>
   )
