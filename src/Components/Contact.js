@@ -30,7 +30,7 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
 }
 
   return (
-    <div className='bg-blue-400 h-screen max-w-5xl mx-auto 'id='Contact' >
+    <div className='bg-[#213654] h-screen max-w-5xl mx-auto 'id='Contact' >
       <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
         <h1 className=" text-5xl md:text-7xl font-bold py-24 flex justify-center text-center md:text-left">
@@ -127,7 +127,7 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
            onSubmit={sendEmail}
        
               type="submit"
-              className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+              className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 mb-10 py-2 text-gray-50 text-xs font-bold"
             >
               Send Message
             </button>
