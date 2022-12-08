@@ -9,7 +9,6 @@ import Nav from './Nav';
 function Home() {
   return (
     <div id='Home' className='bg-gradient-to-t from-blue-700 to-blue-600  flex pt-5 justify-center mx-auto h-screen font-sans'>
-
     <h1 className=" text-[25px] max-sm:text-[22px] text-white"> I'm Buğra SARILAN </h1>
     <img className='w-[350px] h-[350px] max-sm:h-[250px] max-sm:w-[250px] max-sm:top-20 rounded-[350px] absolute top-32' src={require(`../Files/Me.jpg`)} alt="myphoto" ></img>
     <div className="absolute top-[500px] flex gap-8 justify-center max-sm:top-[350px]  "> 

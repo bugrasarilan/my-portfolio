@@ -12,14 +12,6 @@ import{AiFillMediumCircle}from 'react-icons/ai'
 
 function Contact() {
 const KEY = process.env.REACT_APP_KEY;
-//   const showToastMessage = (e) => {
-//     e.preventDefault();
-//     toast.success('message sending successful thank you', {
-//         position: toast.POSITION.BOTTOM_CENTER
-//     });
-// };
-
- 
   function sendEmail(e) {
    
     e.preventDefault();
@@ -74,7 +66,7 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
               <div className="flex flex-row items-center space-x-6 p-4">
              
                 <p className="text-gray-50  text-lg flex items-center gap-3">
-                  <BiCurrentLocation/> Tekirdag / turkey
+                  <BiCurrentLocation/> Tekirdag / Turkey
                 </p>
               </div>
             </div>
@@ -144,7 +136,6 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
         </div>
       </div>
     </section>
-       
     </div>
   )
 }
