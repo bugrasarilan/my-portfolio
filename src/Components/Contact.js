@@ -92,7 +92,7 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
               name="name"
             />
             <label className="text-sm text-gray-600 mt-1 mx-4">
-              mail title
+              Mail title
             </label>
          
             <input

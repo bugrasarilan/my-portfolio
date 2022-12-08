@@ -15,7 +15,7 @@ function Projects() {
   </a> 
 
   <a className='transition duration-500 hover:scale-110 ' href='https://weather-forecast-u9xl.vercel.app/' target="_blank">
-   <p className='flex justify-center text-xl'>  weather-forecast</p> 
+   <p className='flex justify-center text-xl'>  Weather-Forecast</p> 
   <img className='w-[350px] h-[350px] max-sm:w-[180px] max-sm:h-[180px] rounded-lg max-sm:mb-5  ' src={require(`../Files/Project-2.jpg`)} alt="myphoto" ></img>
   <a className=' flex justify-center pt-2 ' href='https://github.com/bugrasarilan/Weather-Forecast' target="_blank">
       <button className='rounded-lg transition ease-in-out delay-150 bg-blue-200 hover:-translate-y-1 hover:scale-110 hover:bg-slate-300 duration-300 transform ' >Show me source code</button> 
