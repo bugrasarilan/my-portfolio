@@ -18,7 +18,7 @@ function Projects() {
    <p className='flex justify-center text-xl'>  weather-forecast</p> 
   <img className='w-[350px] h-[350px] max-sm:w-[180px] max-sm:h-[180px] rounded-lg max-sm:mb-5  ' src={require(`../Files/Project-2.jpg`)} alt="myphoto" ></img>
   <a className=' flex justify-center pt-2 ' href='https://github.com/bugrasarilan/Weather-Forecast' target="_blank">
-      <button className='rounded-lg transition ease-in-out delay-150 bg-slate-300 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 duration-300 transform ' >Show me source code</button> 
+      <button className='rounded-lg transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-300 transform ' >Show me source code</button> 
       </a>
 </a>
 
