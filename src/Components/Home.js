@@ -8,13 +8,13 @@ import Nav from './Nav';
 
 function Home() {
   return (
-    <div id='Home' className='bg-gradient-to-b from-blue-700 via-blue-600 to-blue-200  flex pt-5 justify-center mx-auto h-screen font-sans'>
+    <div id='Home' className='bg-gradient-to-t from-blue-700 to-blue-600  flex pt-5 justify-center mx-auto h-screen font-sans'>
 
-    <h1 className=" text-[25px] max-sm:text-[22px]  "> I'm Buğra SARILAN </h1>
+    <h1 className=" text-[25px] max-sm:text-[22px] text-white"> I'm Buğra SARILAN </h1>
     <img className='w-[350px] h-[350px] max-sm:h-[250px] max-sm:w-[250px] max-sm:top-20 rounded-[350px] absolute top-32' src={require(`../Files/Me.jpg`)} alt="myphoto" ></img>
     <div className="absolute top-[500px] flex gap-8 justify-center max-sm:top-[350px]  "> 
-    <a className='rounded-lg p-2 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-400 duration-300 transform hover:translate-x-5 animate-pulse 6s ' href={CVA} >Download cv </a>  
-        <a className='rounded-lg p-2 transition ease-in-out delay-150 bg-orange-50 hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 transform hover:-translate-x-5 animate-pulse 1s'  href="#Contact"  >Contact </a>
+    <a className='rounded-lg p-2 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 duration-300 transform hover:translate-x-5 animate-bounce' href={CVA} >Download cv </a>  
+        <a className='rounded-lg p-2 transition ease-in-out delay-150 bg-orange-50 hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 transform hover:-translate-x-5 '  href="#Contact"  >Contact </a>
     </div>
 
 
