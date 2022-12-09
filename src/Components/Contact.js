@@ -30,7 +30,7 @@ useFormik({
 			onSubmit: (values) => {
 				console.log(values);
         toast.success('message sending successful thank you', {
-          position: toast.POSITION.BOTTOM_CENTER
+          position: toast.POSITION.TOP_CENTER
           });
 			},
 			validationSchema,
