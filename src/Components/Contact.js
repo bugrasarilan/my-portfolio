@@ -12,6 +12,7 @@ import{AiFillMediumCircle}from 'react-icons/ai'
 
 function Contact() {
 const KEY = process.env.REACT_APP_KEY;
+
   function sendEmail(e) {
    
     e.preventDefault();
@@ -79,22 +80,20 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
             </div>
 
           </div>
+
+
           <form onSubmit={sendEmail}  className="form rounded-lg bg-white p-4 flex flex-col">
 
-            <label className="text-sm text-gray-600 mx-4">
-              Your Name
-            </label>
-         
+            <label className="text-sm text-gray-600 mx-4"> Your Name</label>
             <input
             placeholder='Your name'
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none"
               name="name"
             />
-            <label className="text-sm text-gray-600 mt-1 mx-4">
-              Mail title
-            </label>
-         
+
+
+            <label className="text-sm text-gray-600 mt-1 mx-4"> Mail title</label>
             <input
             placeholder='Mail title'
               type="text"
@@ -102,33 +101,28 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
               name="subject"
             />
             
-            <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
-              Email
-            </label>
+            <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">Email</label>
             <input
             placeholder='Your Email'
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
             />
-            <label
-              htmlFor="message"
-              className="text-sm text-gray-600 mx-4 mt-4"
-            >
-              Message
-            </label>
+
+            <label htmlFor="message" className="text-sm text-gray-600 mx-4 mt-4"> Message</label>
             <textarea
               rows="4"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
             ></textarea>
+
+
             <button
            onSubmit={sendEmail}
-       
               type="submit"
               className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 mb-10 py-2 text-gray-50 text-xs font-bold"
-            >
+              >
               Send Message
             </button>
            <ToastContainer />
