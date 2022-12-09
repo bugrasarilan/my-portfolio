@@ -11,7 +11,7 @@ function Skills() {
   return (
     <div className=''>
 <p className='p-2'>
- <h1 className='flex text-2xl justify-center mt-12 '><span className='animate-bounce'> Hi 👋 I'm Buğra</span>, <br/> </h1>
+ <h1 className='flex text-2xl justify-center mt-12 '><span className='animate-bounce'> Hi 👋 I'm Buğra</span> <br/> </h1>
 <h2 className='text-2xl flex justify-center'> I graduated from Eskişehir Osmangazi university at statistic. I am developing and working on frontend. <br/> I decide to change my industry because I love coding and new technology. I am improving myself in this area. </h2> </p>
      
         <div className='flex flex-col gap-7 justify-items-center justify-center  mx-auto  border-2 rounded-[30px] w-44 p-3 mt-10'  >
