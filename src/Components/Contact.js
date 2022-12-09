@@ -95,8 +95,8 @@ useFormik({
               </div>
             </div>
             
-            <div className="social-icons text-white flex flex-row gap-5 ml-5">
-            <a href='https://www.linkedin.com/in/bu%C4%9Fra-sar%C4%B1lan-390343183/' target='_blank'> <BsLinkedin/></a>
+            <div className="social-icons text-white flex flex-row gap-5 ml-5 animate-bounce">
+            <a className='' href='https://www.linkedin.com/in/bu%C4%9Fra-sar%C4%B1lan-390343183/' target='_blank'> <BsLinkedin/></a>
         <a href='https://github.com/bugrasarilan' target='_blank'><BsGithub/> </a>
         <a href='https://medium.com/@bugrasarilan' target='_blank'><AiFillMediumCircle/> </a>
         <a href='https://www.instagram.com/bugrasarlan/'target="_blank"><BsInstagram/> </a>
