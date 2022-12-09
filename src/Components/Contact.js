@@ -9,26 +9,49 @@ import{BsLinkedin} from 'react-icons/bs'
 import{BsGithub} from 'react-icons/bs'
 import{BsInstagram}from 'react-icons/bs'
 import{AiFillMediumCircle}from 'react-icons/ai' 
+import {useFormik } from "formik";
+import validationSchema from "./validations";
+
 
 function Contact() {
 const KEY = process.env.REACT_APP_KEY;
 
-  function sendEmail(e) {
+
+const { handleSubmit, handleChange, handleBlur, values, errors, touched  } =
+
+useFormik({
+			initialValues: {
+				name: "",
+				subject: "",
+        email: "",
+				message: "",
+				
+			},
+			onSubmit: (values) => {
+				console.log(values);
+        toast.success('message sending successful thank you', {
+          position: toast.POSITION.BOTTOM_CENTER
+          });
+			},
+			validationSchema,
+		});
+
+   function sendEmail(e) { 
+     e.preventDefault();
+     toast.success('message sending successful thank you', {
+      position: toast.POSITION.BOTTOM_CENTER
+      });
    
-    e.preventDefault();
-    toast.success('message sending successful thank you', {
-             position: toast.POSITION.BOTTOM_CENTER
-             });
-   
-emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
+ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
+     .then((result) => {
+         console.log(result.text);
+     }, (error) => {
+         console.log(error.text);
+     });
     
-    e.target.reset()
-}
+     e.target.reset()
+    
+ }
 
   return (
     <div className='bg-[#213654] h-screen max-w-5xl mx-auto 'id='Contact' >
@@ -82,7 +105,7 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
           </div>
 
 
-          <form onSubmit={sendEmail}  className="form rounded-lg bg-white p-4 flex flex-col">
+          <form  onSubmit={handleSubmit}  className="form rounded-lg bg-white p-4 flex flex-col">
 
             <label className="text-sm text-gray-600 mx-4"> Your Name</label>
             <input
@@ -90,7 +113,16 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none"
               name="name"
+              
+            
+              value={values.name}
+              onChange={handleChange}
+              onBlur={handleBlur}
             />
+            {errors.name && touched.name && (
+					<div className="text-blue-700 font-bold ml-4  ">{errors.name}</div>
+          )}
+            
 
 
             <label className="text-sm text-gray-600 mt-1 mx-4"> Mail title</label>
@@ -99,32 +131,48 @@ emailjs.sendForm('gmail', 'template_mbjt9wa', e.target, KEY)
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="subject"
+              value={values.subject}
+              onChange={handleChange}
+              onBlur={handleBlur}
             />
-            
+                 {errors.subject && touched.subject && (
+					<div className="text-blue-700 font-bold ml-4  ">{errors.subject}</div>
+          )}
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">Email</label>
             <input
             placeholder='Your Email'
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
+              value={values.email}
+              onChange={handleChange}
+              onBlur={handleBlur}
             />
-
+                     {errors.email && touched.email && (
+					<div className="text-blue-700 font-bold ml-4 ">{errors.email}</div>
+          )}
             <label htmlFor="message" className="text-sm text-gray-600 mx-4 mt-4"> Message</label>
             <textarea
               rows="4"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
+              value={values.message}
+              onChange={handleChange}
+              onBlur={handleBlur}
             ></textarea>
-
-
+                       {errors.message && touched.message && (
+					<div className="text-blue-700 font-bold ml-4  ">{errors.message}</div>
+          )}
             <button
-           onSubmit={sendEmail}
+          //  onSubmit={handleSubmit}  
+          onSubmit={handleSubmit}
               type="submit"
-              className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 mb-10 py-2 text-gray-50 text-xs font-bold"
+              className="bg-blue-700 rounded-md w-1/2 mx-4 mt-8 mb-10 py-2 text-gray-50 text-xs font-bold"
               >
               Send Message
             </button>
+            
            <ToastContainer />
           </form> 
         </div>
