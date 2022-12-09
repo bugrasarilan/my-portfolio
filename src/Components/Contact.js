@@ -29,7 +29,7 @@ useFormik({
 			},
 			onSubmit: (values) => {
 				console.log(values);
-        toast.success('message sending successful thank you', {
+        toast.success('Message sending successful thank you', {
           position: toast.POSITION.TOP_CENTER
           });
 			},
@@ -38,7 +38,7 @@ useFormik({
 
    function sendEmail(e) { 
      e.preventDefault();
-     toast.success('message sending successful thank you', {
+     toast.success('Message sending successful thank you', {
       position: toast.POSITION.BOTTOM_CENTER
       });
    
@@ -111,7 +111,7 @@ useFormik({
             <input
             placeholder='Your name'
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none"
+              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 "
               name="name"
               
             
@@ -129,7 +129,7 @@ useFormik({
             <input
             placeholder='Mail title'
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2  ring-blue-500"
               name="subject"
               value={values.subject}
               onChange={handleChange}
@@ -142,7 +142,7 @@ useFormik({
             <input
             placeholder='Your Email'
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2  ring-blue-500"
               name="email"
               value={values.email}
               onChange={handleChange}
@@ -155,7 +155,7 @@ useFormik({
             <textarea
               rows="4"
               type="text"
-              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+              className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2  ring-blue-500"
               name="message"
               value={values.message}
               onChange={handleChange}
