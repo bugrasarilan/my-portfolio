@@ -30,10 +30,10 @@ function Projects() {
   </a>
     </a>
 
-  <a className='transition duration-500 hover:scale-110 ' href='https://calculator-ashen-omega.vercel.app/' target="_blank"> 
+  <a className='transition duration-500 hover:scale-110 ' href='https://calculator-snowy-three.vercel.app' target="_blank"> 
   <p className='flex justify-center text-xl max-sm:text-lg'> Calculator</p>  
   <img className='w-[350px] h-[350px] max-sm:w-[180px] max-sm:h-[180px] rounded-lg ' src={require(`../Files/Project-4.jpg`)} alt="myphoto" ></img>
- <a className=' flex justify-center pt-2 ' href='https://github.com/bugrasarilan/calculator' target="_blank">
+ <a className=' flex justify-center pt-2 ' href='https://github.com/bugrasarilan/calculator.' target="_blank">
  <button className='rounded-lg transition ease-in-out delay-150 text-xl max-sm:text-[16px] hover:-translate-y-1 hover:scale-110 hover:bg-slate-300 duration-300 transform  ' >Show me source code</button> 
      </a>
       </a> 
